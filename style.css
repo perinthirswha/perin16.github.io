@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    width: 80%;
+    max-width: 600px;
+    animation: popIn 1s ease-out;
+}
+
+#heading {
+    font-size: 32px;
+    color: #ff66b2;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #cc55a0;
+    transform: scale(1.1);
+}
+
+#surpriseMessage {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#surpriseMessage h2 {
+    font-size: 24px;
+    color: #ff66b2;
+    margin-bottom: 15px;
+}
+
+#thankYouButton {
+    background-color: #28a745;
+}
+
+#thankYouButton:hover {
+    background-color: #218838;
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
